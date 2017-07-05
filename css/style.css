@@ -1,0 +1,151 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    font-size: 100%;
+}
+
+a {
+    text-decoration: none;
+}
+
+img {
+    border: none;
+    font-style: italic;
+}
+
+html {
+    background-color: #f6f9f9;
+    color: #95a4a9;
+    font: 12px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+body {
+    margin: 10%;
+}
+
+.avatar {
+    float: left;
+    margin: 0 40px 20px 0;
+}
+    .avatar img {
+        max-width: 200px;
+        max-height: 200px;
+        border-radius: 125px;
+    }
+
+.content {
+    float: left;
+    width: 300px;
+}
+    .title {
+        font-size: 48px;
+        font-weight: normal;
+        line-height: 1;
+    }
+
+    .social-icons li {
+        display: inline;
+    }
+        .social-icons a {
+            display: inline-block;
+            margin-right: 10px;
+            text-indent: -9999px;
+        }
+            .github {
+                background-image: url(../img/github.png);
+                height: 19px;
+                width: 19px;
+            }
+            .facebook {
+                background-image: url(../img/facebook.png);
+                height: 19px;
+                width: 10px;
+            }
+            .telegram {
+                background-image: url(../img/telegram.png);
+                height: 19px;
+                width: 19px;
+            }
+            .dribbble {
+                background-image: url(../img/dribbble.png);
+                width: 21px;
+                height: 19px;
+            }
+            .instagram {
+                background-image: url(../img/instagram.png);
+                width: 20px;
+                height: 19px;
+            }
+            
+
+.title {
+    margin-bottom: 20px;
+}
+
+p {
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+ul {
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+
+a {
+    color: #339999;
+    font-weight: bold;
+}
+
+a:hover, a:focus {
+    color: #7AA1A5;
+    -webkit-transition: color 0.2s ease;
+    -moz-transition: color 0.2s ease;
+    -o-transition: color 0.2s ease;
+    -ms-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+}
+
+a img:hover,
+.social-icons a:hover {
+    filter: alpha(opacity=85);
+    opacity: 0.85;
+    -webkit-transition: opacity 0.2s ease;
+    -moz-transition: opacity 0.2s ease;
+    -o-transition: opacity 0.2s ease;
+    -ms-transition: opacity 0.2s ease;
+    transition: opacity 0.2s ease;
+}
+
+.attrib {
+    display: inline-block;
+    position: fixed;
+    bottom: 20px;
+    right: 120px;
+}
+
+.attrib a {
+    color: #7AA1A5;
+}
+
+
+@media handheld, only screen and (max-width: 768px) {
+    .avatar,
+    .content {
+        float: none;
+        
+    }
+
+    .avatar img {
+        max-width: 125px;
+        max-height: 125px;
+    }
+
+    .content {
+        width: 100%;
+    }
+}
